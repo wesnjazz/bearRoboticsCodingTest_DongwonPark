@@ -66,7 +66,9 @@ atm->selectAccount(card, savings);
 
 ### 6. Check the current default account
 ```
-atm->getDefaultAccount(card);
+cout << atm->getDefaultAccount(card);
+
+DefaultAccount: Savings
 ```
 
 ### 7. Get basic infos of the card
