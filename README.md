@@ -38,3 +38,21 @@ The ATM machine returns the result string for all operations so that you can pri
 ```
 cout << atm->insertCard(card) << endl;
 ```
+### 4. Check PIN
+```
+atm->checkPIN(card, "PIN")
+```
+** If PIN is not matched, then all operations cannot be excuted and will print the error message **
+```
+Invalid PIN.
+
+[-] Error. Invalid PIN. Cannot proceed the operation [selectAccount].
+[-] Error. Invalid PIN. Cannot proceed the operation [getDefaultAccount].
+[-] Error. Invalid PIN. Cannot proceed the operation [getBasicInfos].
+[-] Error. Invalid PIN. Cannot proceed the operation [getBalance].
+[-] Error. Invalid PIN. Cannot proceed the operation [deposit].
+```
+```
+Corrent PIN.
+```
+
