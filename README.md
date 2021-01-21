@@ -15,3 +15,15 @@ g++ main.cpp ATM.cpp Account.cpp Card.cpp -o ATM.exe
 ATM.exe
 ```
 Then the main() will perform tests.
+
+
+## How to create test
+In main.cpp, modify:
+### 1. To create a card
+```
+Card* card = new Card("Name", "Card number", "Exp date", "PIN");
+
+ex)
+Card* card = new Card("Dongwon Park", "1234 5678 9012 3456", "01/31/21", "0000");
+```
+
