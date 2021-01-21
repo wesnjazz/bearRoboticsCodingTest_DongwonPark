@@ -76,8 +76,34 @@ atm->getDefaultAccount(card);
 ### 7. Get basic infos of the card
 ```
 cout << atm->getBasicInfos(card);
+
 Name: Dongwon Park
 Card number: 1234 5678 9012 3456
 Expiration Date: 01/31/21
+```
+
+### 8. Balance
+```
+cout << atm->getBalance(card);
+
+Current Balance: $0
+```
+
+### 9. Deposit
+```
+cout << atm->deposit(card, 300);
+
+$300 was deposited.
+```
+
+### 10. Withdraw
+```
+cout << atm->withdraw(card, 34);
+
+$34 was withdrawed.
+
+cout << atm->getBalance(card);
+
+Current Balance: $266
 ```
 
