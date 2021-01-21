@@ -19,11 +19,22 @@ Then the main() will perform tests.
 
 ## How to create test
 In main.cpp, modify:
-### 1. To create a card
+### 1. Create a card
 ```
 Card* card = new Card("Name", "Card number", "Exp date", "PIN");
 
 ex)
 Card* card = new Card("Dongwon Park", "1234 5678 9012 3456", "01/31/21", "0000");
 ```
-
+### 2. Create an ATM machine
+```
+ATM* atm = new ATM();
+```
+### 3. Insert the card
+```
+atm->insertCard(card);
+```
+The ATM machine returns the result string for all operations so that you can print out the message.
+```
+cout << atm->insertCard(card) << endl;
+```
