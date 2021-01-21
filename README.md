@@ -35,10 +35,6 @@ ATM* atm = new ATM();
 atm->insertCard(card);
 ```
 (optional) To print the status message:
-```
-cout << atm->insertCard(card);
-```
-
 The ATM machine returns the result string for all operations so that you can print out the message.
 ```
 cout << atm->insertCard(card) << endl;
